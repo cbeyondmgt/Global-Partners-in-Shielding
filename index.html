@@ -113,13 +113,16 @@
         }
 
         .button {
-            /* Green Rounded Rectangle Button */
-            background: #c7d492;
             border-radius: 8px;
             height: 44px;
-            width: 240px;
+            width: 240px!important;
         }
-
+        img.button {
+                width: 240px!important;
+            }
+        .mobilegetItNow{
+            display: none;
+        }
         .avatar {
             width: 100px;
             margin: 10px auto;
@@ -251,7 +254,12 @@
                 width: 100%!important;
                 height: auto!important;
             }
-
+            .mobilegetItNow {
+                display: block;
+            }
+            .getItNow{
+                display: none;
+            }
             .toggle-content {
                 display: block;
                 max-height: 0;
@@ -388,7 +396,7 @@
 
                     <!--      GIF   -->
                     <tr style="text-align: center;">
-                        <td><a href="www.shieldingsystems.com/" taget="_blank"><img style="max-width: 700px;" src="Assets/Slider/GPS%20Image%20Slider.gif" alt="GPS Historic Image Slider"></a>
+                        <td><a href="http://www.shieldingsystems.com/" taget="_blank"><img style="max-width: 700px;" src="Assets/Slider/GPS%20Image%20Slider.gif" alt="GPS Historic Image Slider"></a>
                         </td>
                     </tr>
                     <!--         End GIF           -->
@@ -430,7 +438,7 @@
                         </td>
                         <!--          Learn More Button              -->
                         <td width="33%" class="button">
-                            <a href="" target="_blank"><span class="buttonText">Learn More</span></a>
+                            <a href="http://www.shieldingsystems.com" target="_blank"><img src="Assets/Buttons/learnMorebutton.png" alt="Learn More Button"></a>
                         </td>
                         <!--          End Learn More Button             -->
                         <td width="auto">
@@ -543,11 +551,10 @@
 
                                                 <!--          Learn More Button              -->
                                                 <td></td>
-
                                                 <td width="auto" class="button">
-                                                    <a href="http://www.shieldingsystems.com/resources.php" target="_blank"><span class="buttonText">Get It Now</span></a>
+                                                    <a href="http://www.shieldingsystems.com/resources.php" target="_blank"><img class="getItNow" src="Assets/Buttons/getItNowButton.png" alt="Get It Now Button">
+                                                    <img class="mobilegetItNow" src="Assets/Buttons/getItNowButtonMobile.png" alt="Get It Now Button"></a>
                                                 </td>
-
                                                 <td></td>
                                             </tr>
                                         </table>
@@ -597,7 +604,7 @@
                         </td>
                         <!--          Learn More Button              -->
                         <td width="33%" class="button">
-                            <a href="http://www.shieldingsystems.com/contact.php" target="_blank"><span class="buttonText">Start Customizing</span></a>
+                            <a href="http://www.shieldingsystems.com/contact.php" target="_blank"><img src="Assets/Buttons/startCustomizingButton.png" alt="Start Customizing Button"></a>
                         </td>
                         <td width="auto">
 
