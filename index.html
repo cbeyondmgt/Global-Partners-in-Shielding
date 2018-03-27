@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="x-apple-disable-message-reformatting" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Global Partners in Shielding, Inc.</title>
+    <title>Pine Email Framework</title>
     <!--[if mso]>
     <xml>
       <o:OfficeDocumentSettings>
@@ -16,12 +16,16 @@
       </o:OfficeDocumentSettings>
     </xml>
     <![endif]-->
-    <style type="text/css">
-        {
-            font-family: 'PT Serif', Georgia, serif!important;
-            font-weight: 600;
-        }
 
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Merriweather|Lato');
+        @media only screen {
+            .serif {
+                font-family: 'Merriweather', Georgia, serif!important;
+            }
+            .sans-serif {
+                font-family: 'Lato', Arial, sans-serif!important;
+            }
         }
 
         #outlook a {
@@ -40,145 +44,18 @@
             vertical-align: middle;
         }
 
-        body {
-            /* Lorem Ipsum dolor re: */
-            font-family: Lato-Regular;
-            font-size: 18px;
-            color: #000000;
-            letter-spacing: 0.52px;
-            line-height: 24px;
-            text-align: center;
-            word-break: normal;
-        }
-
-        h1 {
-            /* Global Partners in Shielding, Inc.*/
-            font-family: 'Lato-Medium';
-            font-size: 30px;
-            color: #ffffff;
-            letter-spacing: 0.22px;
-            text-align: center;
-        }
-
-        p {
-            padding: 0 60px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .title {
-            background-color: #1587b1;
-        }
-
-        .jobTitle {
-            /*General Manager*/
-            font-family: 'Lato-Medium';
-            font-size: 22px;
-            color: #1587b1;
-            letter-spacing: 0.25px;
-            line-height: 0px;
-
-        }
-
-        .name {
-            /* Bryan Bordeman: */
-            font-family: 'Lato-Medium';
-            font-size: 20px;
-            color: #000000;
-            letter-spacing: 0.22px;
-            line-height: 40px;
-        }
-
-        .buttonText {
-            /* Learn More: */
-            font-family: Lato-Medium;
-            font-weight: 700;
-            font-size: 18px;
-            color: #000000;
-            letter-spacing: 0.22px;
-        }
-
-        .textCTA {
-            /* Download Our Free Design Guide: */
-            font-family: 'Arial';
-            font-weight: 600;
-            font-size: 24px;
-            color: #ffffff;
-            letter-spacing: 0.29px;
-            text-align: left;
-            padding-left: 60px;
-        }
-
-        .button {
-            border-radius: 8px;
-            height: 44px;
-            width: 240px!important;
-        }
-        img.button {
-                width: 240px!important;
-            }
-        .mobilegetItNow{
-            display: none;
-        }
-        .avatar {
-            width: 100px;
-            margin: 10px auto;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .preFooter {
-            /* Background: */
-            background: #1587b1;
-            /* Text: */
-            font-family: 'Lato';
-            font-weight: 400;
-            font-size: 16px;
-            color: #ffffff;
-            letter-spacing: 0.22px;
-            text-align: center;
-        }
-
-        .footer {
-            /* Rectangle 4: */
-            background: #2f5b78;
-            text-align: center;
-        }
-
-        ul li a {
-            display: inline;
-            list-style: none;
-            text-decoration: none;
-            color: #ffffff;
-            padding-right: 65px;
-        }
-
-        ul.topNav li a {
-            color: #2f5b78;
-        }
-
-        /*
         .col,
         td,
         th,
         div,
         p,
+        h1,
+        h2,
         h3,
         h4,
         h5,
         h6 {
             font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-        }
-*/
-
-        .logo {
-            margin: 25px auto;
-            width: auto;
-            max-width: 524px;
         }
 
         img {
@@ -192,47 +69,17 @@
         }
 
         .nav-item {
-            display: block;
+            display: inline-block;
+        }
+
+        .spacer,
+        .divider {
+            mso-line-height-rule: exactly;
+            overflow: hidden;
+            vertical-align: middle;
         }
 
         @media only screen and (max-width: 699px) {
-            .logo {
-                max-width: 250px;
-                margin: 0 auto;
-            }
-            h1 {
-                font-size: 20px;
-                padding: 0 5px;
-            }
-            p {
-                font-size: 14px;
-                padding: 0 20px;
-            }
-            ul li a {
-                text-align: center;
-                padding-right: 20px;
-                list-style: none;
-            }
-
-            .hidden {
-                display: block;
-            }
-            .hideNav {
-                visibility: hidden;
-            }
-            .avatar {
-                max-width: 200px;
-            }
-            .textCTA {
-                text-align: center;
-                line-height: 30px;
-            }
-            .textCTA {
-                padding: 0;
-            }
-            #mobileCTAbtn {
-                padding-top: 35px;
-            }
 
             u~div .wrapper {
                 min-width: 100vw;
@@ -249,18 +96,80 @@
                 width: 100%!important;
             }
 
+            .col-sm-1 {
+                max-width: 8.33333%;
+            }
+            .col-sm-2 {
+                max-width: 16.66667%;
+            }
+            .col-sm-3 {
+                max-width: 25%;
+            }
+            .col-sm-4 {
+                max-width: 33.33333%;
+            }
+            .col-sm-5 {
+                max-width: 41.66667%;
+            }
+            .col-sm-6 {
+                max-width: 50%;
+            }
+            .col-sm-7 {
+                max-width: 58.33333%;
+            }
+            .col-sm-8 {
+                max-width: 66.66667%;
+            }
+            .col-sm-9 {
+                max-width: 75%;
+            }
+            .col-sm-10 {
+                max-width: 83.33333%;
+            }
+            .col-sm-11 {
+                max-width: 91.66667%;
+            }
+
+            .col-sm-push-1 {
+                margin-left: 8.33333%;
+            }
+            .col-sm-push-2 {
+                margin-left: 16.66667%;
+            }
+            .col-sm-push-3 {
+                margin-left: 25%;
+            }
+            .col-sm-push-4 {
+                margin-left: 33.33333%;
+            }
+            .col-sm-push-5 {
+                margin-left: 41.66667%;
+            }
+            .col-sm-push-6 {
+                margin-left: 50%;
+            }
+            .col-sm-push-7 {
+                margin-left: 58.33333%;
+            }
+            .col-sm-push-8 {
+                margin-left: 66.66667%;
+            }
+            .col-sm-push-9 {
+                margin-left: 75%;
+            }
+            .col-sm-push-10 {
+                margin-left: 83.33333%;
+            }
+            .col-sm-push-11 {
+                margin-left: 91.66667%;
+            }
+
             img {
                 width: 100%!important;
                 height: auto!important;
             }
-            .mobilegetItNow {
-                display: block;
-            }
-            .getItNow{
-                display: none;
-            }
+
             .toggle-content {
-                display: block;
                 max-height: 0;
                 overflow: auto;
                 transition: max-height .4s linear;
@@ -277,6 +186,9 @@
                 line-height: inherit!important;
                 max-height: none!important;
             }
+            .hide-sm {
+                display: none!important;
+            }
 
             .align-sm-center {
                 display: table!important;
@@ -284,38 +196,127 @@
                 margin-left: auto!important;
                 margin-right: auto!important;
             }
+            .align-sm-left {
+                float: left;
+            }
+            .align-sm-right {
+                float: right;
+            }
+
+            .text-sm-center {
+                text-align: center!important;
+            }
+            .text-sm-left {
+                text-align: left!important;
+            }
+            .text-sm-right {
+                text-align: right!important;
+            }
 
             .full-width-sm {
                 display: table!important;
                 width: 100%!important;
             }
-            .stack-sm-first {
+            .stack-sm-top {
                 display: table-caption!important;
                 max-width: 100%;
                 padding-left: 0!important;
             }
-            .stack-sm-second {
+            .stack-sm-first {
                 display: table-header-group!important;
             }
-            .stack-sm-third {
+            .stack-sm-last {
                 display: table-footer-group!important;
             }
 
+            .borderless-sm {
+                border: none!important;
+            }
+            .spacer,
+            .divider {
+                height: 30px;
+                line-height: 100%!important;
+            }
+
             .nav-item {
-                display: block;
                 padding: 0 10px 0!important;
             }
             .nav-sm-vertical .nav-item {
-                margin: 0 auto;
                 display: block;
-
             }
             .nav-sm-vertical .nav-item a {
-                display: block;
+                display: inline-block;
                 padding: 5px 0!important;
+            }
+
+            .p-sm-0 {
+                padding: 0!important;
             }
             .p-sm-1 {
                 padding: 10px!important;
+            }
+            .p-sm-2 {
+                padding: 30px!important;
+            }
+            .pt-sm-0 {
+                padding-top: 0!important;
+            }
+            .pt-sm-1 {
+                padding-top: 10px!important;
+            }
+            .pt-sm-2 {
+                padding-top: 30px!important;
+            }
+            .pr-sm-0 {
+                padding-right: 0!important;
+            }
+            .pr-sm-1 {
+                padding-right: 10px!important;
+            }
+            .pr-sm-2 {
+                padding-right: 30px!important;
+            }
+            .pb-sm-0 {
+                padding-bottom: 0!important;
+            }
+            .pb-sm-1 {
+                padding-bottom: 10px!important;
+            }
+            .pb-sm-2 {
+                padding-bottom: 30px!important;
+            }
+            .pl-sm-0 {
+                padding-left: 0!important;
+            }
+            .pl-sm-1 {
+                padding-left: 10px!important;
+            }
+            .pl-sm-2 {
+                padding-left: 30px!important;
+            }
+            .px-sm-0 {
+                padding-right: 0!important;
+                padding-left: 0!important;
+            }
+            .px-sm-1 {
+                padding-right: 10px!important;
+                padding-left: 10px!important;
+            }
+            .px-sm-2 {
+                padding-right: 30px!important;
+                padding-left: 30px!important;
+            }
+            .py-sm-0 {
+                padding-top: 0!important;
+                padding-bottom: 0!important;
+            }
+            .py-sm-1 {
+                padding-top: 10px!important;
+                padding-bottom: 10px!important;
+            }
+            .py-sm-2 {
+                padding-top: 30px!important;
+                padding-bottom: 30px!important;
             }
         }
     </style>
@@ -641,6 +642,5 @@
 
     </table>
     <!-- End Responsive Wrapper   -->
-
 </body>
 </html>
